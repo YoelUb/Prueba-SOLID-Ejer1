@@ -1,6 +1,7 @@
-package com.pruebassolid;
+package com.pruebassolid.model;
 
 public class Matriz {
+
     private final int[][] elementos;
 
     public Matriz(int[][] elementos) {
@@ -10,6 +11,7 @@ public class Matriz {
 
         this.elementos = copiarMatriz(elementos);
     }
+
 
     private int[][] copiarMatriz(int[][] original) {
         int filas = original.length;
@@ -24,16 +26,20 @@ public class Matriz {
         return copia;
     }
 
-    public void imprimir() {
-        for (int[] fila : elementos) {
-            for (int valor : fila) {
-                System.out.print(valor + " ");
+   public void imprimirMatriz(){
+
+        for (int i = 0; i < elementos.length; i++) {
+            for (int j = 0; j < elementos[i].length; j++) {
+                System.out.print(elementos[i][j] + " ");
             }
             System.out.println();
         }
-    }
 
-    public Matriz transpuesta() {
+   }
+
+
+   public Matriz transpuesta(){
+
         int filas = elementos.length;
         int columnas = elementos[0].length;
         int[][] transpuesta = new int[columnas][filas];
@@ -43,8 +49,8 @@ public class Matriz {
                 transpuesta[j][i] = elementos[i][j];
             }
         }
-
         return new Matriz(transpuesta);
-    }
+
+   }
 
 }
