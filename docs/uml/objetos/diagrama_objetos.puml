@@ -1,0 +1,25 @@
+@startuml MVC_Object_Diagram
+
+object Main
+
+object MatrizView {
+  nombreField : JTextField
+  boton : JButton
+  outputArea : JTextArea
+}
+
+object Matriz {
+  elementos : int[][]
+}
+
+object MatrizController {
+  modelo : Matriz
+  vista : MatrizView
+}
+
+Main --> MatrizView
+Main --> MatrizController
+MatrizController --> Matriz
+MatrizController --> MatrizView
+
+@enduml

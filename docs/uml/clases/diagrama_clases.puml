@@ -1,0 +1,46 @@
+@startuml DiagramaDeClases_Matriz
+
+' Paquetes
+package "com.pruebassolid.model" {
+  class Matriz {
+    - elementos : int[][]
+    + Matriz(elementos : int[][])
+    + imprimir() : void
+    + transpuesta() : Matriz
+    + getElementos() : int[][]
+  }
+}
+
+package "com.pruebassolid.view" {
+  class MatrizView {
+    - nombreField : JTextField
+    - botonSaludar : JButton
+    - outputArea : JTextArea
+    + getInputText() : String
+    + setOutputText(texto : String) : void
+    + addTransponerListener(listener : ActionListener) : void
+    + mostrarError(mensaje : String) : void
+  }
+}
+
+package "com.pruebassolid.controller" {
+  class MatrizController {
+    - modelo : Matriz
+    - vista : MatrizView
+    + MatrizController(modelo : Matriz, vista : MatrizView)
+    - transponerMatriz() : void
+    - formatear(elementos : int[][]) : String
+  }
+}
+
+class Main {
+  + main(args : String[]) : void
+}
+
+' Relaciones
+Main --> MatrizView : crea
+Main --> MatrizController : crea
+MatrizController --> Matriz : usa
+MatrizController --> MatrizView : usa
+
+@enduml
