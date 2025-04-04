@@ -37,7 +37,6 @@ public class Matriz {
 
    }
 
-
    public Matriz transpuesta(){
 
         int filas = elementos.length;
@@ -52,5 +51,9 @@ public class Matriz {
         return new Matriz(transpuesta);
 
    }
+
+    public int[][] getElementos() {
+          return copiarMatriz(elementos);
+     }
 
 }
