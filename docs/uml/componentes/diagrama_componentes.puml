@@ -1,0 +1,18 @@
+@startuml MVC_Component_Diagram
+
+package "MVC Components" {
+  [Main] --> [MatrizView] : initializes
+  [Main] --> [MatrizController] : initializes
+  [Main] --> [Matriz] : initializes
+
+  [MatrizView] --> [MatrizController] : userInput
+  [MatrizController] --> [Matriz] : processData
+  [Matriz] --> [MatrizController] : result
+  [MatrizController] --> [MatrizView] : updateView
+}
+
+package "Maven" {
+  [pom.xml] --> [Main] : dependencyMgmt
+}
+
+@enduml
