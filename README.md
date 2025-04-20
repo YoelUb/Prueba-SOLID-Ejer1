@@ -39,28 +39,48 @@ Las **dependencias están dirigidas hacia abstracciones y no hacia implementacio
 
 ---
 
-## Estructura del Proyecto
 
-```
-src/main/java/com/pruebassolid/
-├── model/
-│   └── Matriz.java              # Lógica de negocio (modelo)
-├── view/
-│   └── MatrizView.java          # Interfaz gráfica (vista)
-├── controller/
-│   └── MatrizController.java    # Conecta vista y modelo (controlador)
-└── Main.java                    # Punto de entrada
-```
-
----
+## 📁 Estructura del Proyecto
 
 
-### Enlace
+Diagrama del Proyecto: 
+
+
+
+![diagram.png](docs/arquitectura/diagram.png)
+
+
+
+
+### Diagrama de Paquetes:
+
+
+
+Diagrama de Clases:
+
+
+
+![diagrama_Clases.png](docs/arquitectura/clases/diagrama_Clases.png)
+
+
+
+Diagrama de Componentes:
+
+
+
+![diagrama_Componentes.png](docs/arquitectura/componentes/diagrama_Componentes.png)
+
+
+
+Diagrama de Objetos:
+
+
+
+![diagrama_Objetos.png](docs/arquitectura/objetos/diagrama_Objetos.png)
+
+
+### Enlaces
 
 Enlace al repositorio: https://github.com/YoelUb/Prueba-SOLID-Ejer1
 
-
-### Dudas
-
-Si tienes dudas sobre la instalación o configuración, no dudes en abrir un issue en el repositorio o contactarme directamente: yurqubar@myuax.com.
 
