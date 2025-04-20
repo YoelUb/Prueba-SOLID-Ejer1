@@ -55,3 +55,12 @@ src/main/java/com/pruebassolid/
 ---
 
 
+### Enlace
+
+Enlace al repositorio: https://github.com/YoelUb/Gestion-Pizza-Di-Mama
+
+
+### Dudas
+
+Si tienes dudas sobre la instalación o configuración, no dudes en abrir un issue en el repositorio o contactarme directamente: yurqubar@myuax.com.
+
