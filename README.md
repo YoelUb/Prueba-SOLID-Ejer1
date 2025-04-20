@@ -84,6 +84,3 @@ Diagrama de Objetos:
 Enlace al repositorio: https://github.com/YoelUb/Prueba-SOLID-Ejer1
 
 
-### Dudas
-
-Si tienes dudas sobre la instalación o configuración, no dudes en abrir un issue en el repositorio o contactarme directamente: yurqubar@myuax.com.
