@@ -75,8 +75,9 @@ Diagrama de Componentes:
 Diagrama de Objetos:
 
 
+![diagrama_objetos.png](docs/arquitectura/objetos/diagrama_objetos.png)
 
-![diagrama_Objetos.png](docs/arquitectura/objetos/diagrama_Objetos.png)
+
 
 
 ### Enlaces
