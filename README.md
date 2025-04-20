@@ -57,7 +57,7 @@ src/main/java/com/pruebassolid/
 
 ### Enlace
 
-Enlace al repositorio: https://github.com/YoelUb/Gestion-Pizza-Di-Mama
+Enlace al repositorio: https://github.com/YoelUb/Prueba-SOLID-Ejer1
 
 
 ### Dudas
